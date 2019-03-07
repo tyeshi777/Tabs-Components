@@ -10,7 +10,7 @@ class Dropdown {
 
     this.content = document.querySelector(".dropdown-content");
     this.content = new Content(this.content);
-    console.log(this.content);
+    // console.log(this.content);
     // Add a click handler to the button reference and call the toggleContent method.
     this.button.addEventListener("click", () => this.toggleContent());
   }
@@ -26,7 +26,6 @@ class Content {
     this.contentTab = content;
   }
   toggleContentTab() {
-    // this.contentTab.classList.toggle("dropdown-content");
     this.contentTab.classList.toggle("dropdown-hidden");
   }
 }
